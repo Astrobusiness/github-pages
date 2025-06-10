@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja de Carros de Brinquedo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #ff3d00;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      display: block;
+    }
+
+    nav a:hover {
+      background-color: #575757;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1, h2 {
+      color: #d32f2f;
+    }
+
+    .destaque {
+      background-color: #fff3e0;
+      padding: 10px;
+      border-left: 6px solid #ff9800;
+      margin-bottom: 20px;
+    }
+
+    .lista-produtos {
+      list-style: square;
+      padding-left: 20px;
+    }
+
+    .produto {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+    }
+
+    .produto img {
+      width: 200px;
+      height: auto;
+      margin-right: 20px;
+      border-radius: 5px;
+    }
+
+    .produto-info {
+      flex: 1;
+    }
+
+    .botao-comprar {
+      background-color: #4caf50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .botao-comprar:hover {
+      background-color: #45a049;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .link-footer {
+      color: #ffab91;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>BrinCarros - Sua loja de carros de brinquedo!</h1>
+    <p>Os melhores modelos em miniatura para colecionadores e crianças</p>
+  </header>
+
+  <nav>
+    <a href="#">Início</a>
+    <a href="#produtos">Produtos</a>
+    <a href="#promocoes">Promoções</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <div class="container">
+    <div class="destaque">
+      <h2>Destaque da Semana</h2>
+      <p>Compre 2 carros esportivos e ganhe 10% de desconto!</p>
+    </div>
+
+    <h2 id="produtos">Nossos Produtos</h2>
+
+    <ul class="lista-produtos">
+      <li>Carros esportivos</li>
+      <li>Carros clássicos</li>
+      <li>Caminhonetes e SUVs</li>
+      <li>Miniaturas colecionáveis</li>
+    </ul>
+
+    <div class="produto">
+      <img src="https://images.unsplash.com/photo-1606820853061-c0c9bd21c11c" alt="Carro esportivo de brinquedo">
+      <div class="produto-info">
+        <h3>Carro Esportivo Vermelho</h3>
+        <p>Réplica perfeita em miniatura, com acabamento premium e rodas que giram.</p>
+        <p><strong>Preço: R$ 99,90</strong></p>
+        <button class="botao-comprar">Comprar</button>
+      </div>
+    </div>
+
+    <div class="produto">
+      <img src="https://images.unsplash.com/photo-1618170829443-f5e7f3342a1d" alt="Carro clássico de brinquedo">
+      <div class="produto-info">
+        <h3>Carro Clássico Azul</h3>
+        <p>Um charme do passado em versão miniatura. Ideal para decoração e presente.</p>
+        <p><strong>Preço: R$ 79,90</strong></p>
+        <button class="botao-comprar">Comprar</button>
+      </div>
+    </div>
+
+    <div class="produto">
+      <img src="https://images.unsplash.com/photo-1599052288826-60aabb9b2f71" alt="Caminhonete de brinquedo">
+      <div class="produto-info">
+        <h3>Caminhonete Off-Road</h3>
+        <p>Alta resistência e visual aventureiro. Feita para brincar de verdade!</p>
+        <p><strong>Preço: R$ 89,90</strong></p>
+        <button class="botao-comprar">Comprar</button>
+      </div>
+    </div>
+
+    <h2 id="promocoes">Promoções Ativas</h2>
+    <p>Aproveite as ofertas da semana. Estoque limitado!</p>
+    <ul>
+      <li><strong>Compre 3, pague 2</strong> em todos os modelos clássicos.</li>
+      <li>Frete grátis para compras acima de R$ 150,00.</li>
+    </ul>
+
+    <h2 id="contato">Fale Conosco</h2>
+    <p>Para dúvidas ou pedidos especiais, envie um e-mail para <a href="mailto:contato@brincarros.com" class="link-footer">contato@brincarros.com</a></p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 BrinCarros. Todos os direitos reservados.</p>
+    <p><a href="#" class="link-footer">Voltar ao topo</a></p>
+  </footer>
+
+</body>
+</html>
